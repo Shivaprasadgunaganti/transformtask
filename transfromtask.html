@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 70vh;
+            width: 70vw;
+        }
+       .one:active ~ .scale{
+          transform:scale(1.2);
+       } 
+       .two:active ~ .translate{
+          transform: translate(80px);
+       }
+       .three:active ~ .skew{
+        transform: skew(20deg);
+       }
+       .four:active ~ .rotate{
+         transform: rotate(70deg);
+       }
+       .five:active ~ .perspective{
+         transform: perspective(100px) rotate(30deg) skew(30deg);
+       }
+    </style>
+</head>
+<body>
+    <input type="radio" class="one">click
+    <div class="scale">
+        <img src="./3d-hd-abstract-spheres-82qk15tmfxk02hn8.jpg">
+    </div>
+
+    <input type="radio" class="two">click
+    <div class="translate">
+        <img src="./3d-hd-abstract-spheres-82qk15tmfxk02hn8.jpg">
+    </div>
+
+    <input type="button" class="three">click
+    <div class="skew">
+        <img src="./3d-hd-abstract-spheres-82qk15tmfxk02hn8.jpg">
+    </div>
+    <input type="button" class="four">click
+    <div class="rotate">
+        <img src="./3d-hd-abstract-spheres-82qk15tmfxk02hn8.jpg">
+    </div>
+    <input type="button" class=" five">click
+    <div class="perspective"> 
+        <img src="./tree reflection.jpg">
+    </div>
+</body>
+</html>
